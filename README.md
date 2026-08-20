@@ -6,10 +6,11 @@ Palimnote Skills is a catalog of portable agent skills — self-contained instru
 
 | Skill | Description |
 | --- | --- |
-| [ai-writing-humanizer](https://github.com/hyderhusainarastu/ai-writing-humanizer) | Detect AI-sounding patterns in prose and rewrite in an authentic human voice, with channel-specific rules |
+| [ai-writing-humanizer](https://github.com/hyderhusainarastu/ai-writing-humanizer) | Detect AI-sounding patterns in prose and rewrite in an authentic human voice, with channel-specific rules (adapted from a community skill) |
 | [author-style-profile-mining](https://github.com/hyderhusainarastu/author-style-profile-mining) | Mine a writing corpus for an author's stylistic tics and turn them into imitation or avoidance rules |
 | [structural-checklist-from-exemplars](https://github.com/hyderhusainarastu/structural-checklist-from-exemplars) | Derive a reusable structural checklist for any document genre by comparing exemplar documents |
 | [manuscript-mechanical-qa-sweep-pipeline](https://github.com/hyderhusainarastu/manuscript-mechanical-qa-sweep-pipeline) | Mechanical pre-review QA sweeps for long-form manuscripts: leak greps, claim-verb discipline, compile gate |
+| [pre-submission-manuscript-audit](https://github.com/hyderhusainarastu/pre-submission-manuscript-audit) | Full-manuscript, analysis-only pre-submission audit: argument structure, venue fit, literature gaps, novelty threats, citation accuracy, reviewer simulation |
 
 ## Research
 
@@ -48,6 +49,12 @@ Palimnote Skills is a catalog of portable agent skills — self-contained instru
 | [accessible-dialog-focus-trap-primitives](https://github.com/hyderhusainarastu/accessible-dialog-focus-trap-primitives) | Accessible React dialog primitives: focus trap, escape handling, focus restoration, live-region announcements |
 | [nextjs-cloudflare-workers-landing-site-setup](https://github.com/hyderhusainarastu/nextjs-cloudflare-workers-landing-site-setup) | Wire a Next.js landing site onto Cloudflare Workers with wrangler and Drizzle, from scratch |
 | [context-window-text-chunking](https://github.com/hyderhusainarastu/context-window-text-chunking) | Paragraph-boundary-aware text chunking for fitting long documents into LLM context windows |
+
+## Related Projects
+
+| Project | Description |
+| --- | --- |
+| [interactive-critical-edition](https://github.com/hyderhusainarastu/interactive-critical-edition) | An AI-assisted scholarly reader with citation/context annotations and personalized reading roadmaps |
 
 ## How to use
 
