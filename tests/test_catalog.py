@@ -35,10 +35,19 @@ class Catalog(unittest.TestCase):
             else:
                 self.assertIn(f"[{e['name']}]({e['repo']})", text)
 
-    def test_planned_skills_are_the_five_without_repos(self):
-        planned = {e["name"] for e in self.skills if e.get("status") == "planned"}
-        self.assertEqual(planned, {"deep-research-skill", "cross-model-second-opinion",
-            "hallucinated-citation-checker", "agent-report-evidence-gate", "release-privacy-scanner"})
+    def test_new_skills_are_listed_as_available(self):
+        by = {e["name"]: e for e in self.skills}
+        for n in ("deep-research-skill", "cross-model-second-opinion", "hallucinated-citation-checker",
+                  "agent-report-evidence-gate", "release-privacy-scanner"):
+            self.assertIn(n, by)
+            self.assertNotIn("status", by[n])
+            self.assertIn(f"[{n}](https://github.com/hyderhusainarastu/{n})", build_readme.build())
+        self.assertNotIn("planned, not yet published", build_readme.build())
+
+    def test_readme_has_works_with_and_differs(self):
+        text = build_readme.build()
+        for h in ("## Works with", "| Surface | How | Status |", "documented, not tested", "## Example", "## How it differs"):
+            self.assertIn(h, text)
 
     def test_link_check_offline(self):
         urls = check_links.links(build_readme.build())

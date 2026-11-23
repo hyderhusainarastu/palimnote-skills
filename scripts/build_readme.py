@@ -30,6 +30,42 @@ INSTALL = [
     ("ChatGPT, Claude.ai, Gemini (chat)", "Paste the repo's `PROMPT.md` (or `SKILL.md` where there is no `PROMPT.md`) into the conversation"),
 ]
 
+WORKS_WITH = """## Works with
+
+This table is about this catalog repo (`skills.json`, the generator and the tests), not about each skill; every skill repo has its own capability table.
+
+| Surface | How | Status |
+| --- | --- | --- |
+| Any shell, CI | `python3 -m unittest discover -s tests` and `python3 scripts/build_readme.py --check` (stdlib only) | tested 2026-11-23, Python 3.14, macOS; also run by `.github/workflows/ci.yml` on push |
+| Any tool that can read JSON | read `skills.json` for names, kinds, topics and install commands | tested (schema checked by the unit tests); no agent was asked to use it |
+| Claude Code | clone a skill repo, `./install.sh --claude` | documented, not tested from this catalog |
+| Codex | `./install.sh --agents` | documented, not tested from this catalog |
+| Gemini CLI | `./install.sh --agents` or `--gemini` | documented, not tested from this catalog |
+| Cursor | `./install.sh --agents` or `--cursor`; reads `AGENTS.md` | documented, not tested from this catalog |
+| Copilot | `./install.sh --copilot` (pointer block) | documented, not tested from this catalog |
+| ChatGPT, Claude.ai, Gemini (chat) | paste the skill repo's `PROMPT.md` | documented, not tested from this catalog |
+
+## Example
+
+List the skills in one group straight from the index:
+
+```sh
+$ python3 -c "import json; [print(e['name'], '|', e['kind']) for e in json.load(open('skills.json')) if e['group'] == 'Safety and verification']"
+agent-report-evidence-gate | skill
+release-privacy-scanner | skill
+```
+
+Then install one with its own repo, for example `git clone https://github.com/hyderhusainarastu/release-privacy-scanner && cd release-privacy-scanner && ./install.sh --claude --dry-run`.
+"""
+
+HOW_DIFFERS = """## How it differs
+
+- [anthropics/skills](https://github.com/anthropics/skills) is Anthropic's own collection of skills and the reference for the SKILL.md format. This catalog does not replace it; it indexes separate, single-purpose repos (research, review, governance, safety) and keeps the same format so the skills load in the same places.
+- Curated "awesome" lists of skills and prompts are large link lists. This one is small, generated from one `skills.json`, links only to repos by the same author, and says which surfaces were tested.
+- Each skill is its own repo with its own `install.sh` (most also ship tests), not a folder inside a monorepo. That makes a single skill easy to clone and version, but it also means more repos to keep in sync.
+- Most entries are for working on research and multi-agent projects. If you want general-purpose coding or document skills, look at the collections above first.
+"""
+
 def short(e):
     d = e["description"]
     return d if d.endswith(".") or len(d) < 400 else d
@@ -52,8 +88,10 @@ def build():
         e = next(x for x in skills if x["name"] == nm)
         out.append(f"- {txt}: " + (f"{nm} (planned, not yet published)" if e.get("status") == "planned" else f"[{nm}]({e['repo']})"))
     out.append("- Run a team of agents: [multi-agent-orchestration-playbook](https://github.com/hyderhusainarastu/multi-agent-orchestration-playbook)\n")
+    out.append(WORKS_WITH)
+    out.append(HOW_DIFFERS)
     out.append("## Install per tool\n")
-    out.append("Every published skill repo ships the same `install.sh`; skills marked planned below have no repo yet. Clone the repo you want, then:\n")
+    out.append("Every skill repo ships the same `install.sh`. Clone the repo you want, then:\n")
     out.append("| Tool | How |\n| --- | --- |")
     for t, h in INSTALL:
         out.append(f"| {t} | {h} |")
