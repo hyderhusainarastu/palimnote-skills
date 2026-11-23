@@ -1,0 +1,833 @@
+[
+ {
+  "name": "ai-writing-humanizer",
+  "description": "Detect AI-sounding patterns in prose and rewrite in an authentic human voice, with channel-specific rules (adapted from a community skill)",
+  "group": "Writing",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/ai-writing-humanizer",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/ai-writing-humanizer && cd ai-writing-humanizer && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/ai-writing-humanizer && cd ai-writing-humanizer && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/ai-writing-humanizer"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "author-style-profile-mining",
+  "description": "Mine a writing corpus for an author's stylistic tics and turn them into imitation or avoidance rules",
+  "group": "Writing",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/author-style-profile-mining",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/author-style-profile-mining && cd author-style-profile-mining && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/author-style-profile-mining && cd author-style-profile-mining && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/author-style-profile-mining"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "structural-checklist-from-exemplars",
+  "description": "Derive a reusable structural checklist for any document genre by comparing exemplar documents",
+  "group": "Writing",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/structural-checklist-from-exemplars",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/structural-checklist-from-exemplars && cd structural-checklist-from-exemplars && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/structural-checklist-from-exemplars && cd structural-checklist-from-exemplars && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/structural-checklist-from-exemplars"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "manuscript-mechanical-qa-sweep-pipeline",
+  "description": "Mechanical pre-review QA sweeps for long-form manuscripts: leak greps, claim-verb discipline, compile gate",
+  "group": "Writing",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/manuscript-mechanical-qa-sweep-pipeline",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/manuscript-mechanical-qa-sweep-pipeline && cd manuscript-mechanical-qa-sweep-pipeline && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/manuscript-mechanical-qa-sweep-pipeline && cd manuscript-mechanical-qa-sweep-pipeline && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/manuscript-mechanical-qa-sweep-pipeline"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "pre-submission-manuscript-audit",
+  "description": "Full-manuscript, analysis-only pre-submission audit: argument structure, venue fit, literature gaps, novelty threats, citation accuracy, reviewer simulation",
+  "group": "Writing",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/pre-submission-manuscript-audit",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/pre-submission-manuscript-audit && cd pre-submission-manuscript-audit && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/pre-submission-manuscript-audit && cd pre-submission-manuscript-audit && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/pre-submission-manuscript-audit"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "quote-verification-toolkit",
+  "description": "Verify quoted excerpts against source texts, tolerant of PDF line-wraps, Unicode punctuation, and elision",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/quote-verification-toolkit",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/quote-verification-toolkit && cd quote-verification-toolkit && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/quote-verification-toolkit && cd quote-verification-toolkit && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/quote-verification-toolkit"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "source-intake-pipeline",
+  "description": "Gated intake pipeline for research sources: metadata verification, citability classification, dedupe, provenance",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/source-intake-pipeline",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/source-intake-pipeline && cd source-intake-pipeline && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/source-intake-pipeline && cd source-intake-pipeline && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/source-intake-pipeline"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "citation-lead-mining-and-dedup",
+  "description": "Mine candidate references and idea leads from source text into deduplicated follow-up tables",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/citation-lead-mining-and-dedup",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/citation-lead-mining-and-dedup && cd citation-lead-mining-and-dedup && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/citation-lead-mining-and-dedup && cd citation-lead-mining-and-dedup && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/citation-lead-mining-and-dedup"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "source-authority-hierarchy",
+  "description": "A tiered authority hierarchy for resolving conflicts between sources when evidence disagrees",
+  "group": "Research",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/source-authority-hierarchy",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/source-authority-hierarchy && cd source-authority-hierarchy && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/source-authority-hierarchy && cd source-authority-hierarchy && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/source-authority-hierarchy"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "empirical-study-design-and-gold-set-toolkit",
+  "description": "Design empirical evaluations end to end and build gold-standard sets with blinding and leakage controls",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/empirical-study-design-and-gold-set-toolkit",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/empirical-study-design-and-gold-set-toolkit && cd empirical-study-design-and-gold-set-toolkit && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/empirical-study-design-and-gold-set-toolkit && cd empirical-study-design-and-gold-set-toolkit && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/empirical-study-design-and-gold-set-toolkit"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "scholarly-metadata-resolution-pattern",
+  "description": "Resolve bibliographic metadata across Crossref, OpenAlex, Google Books, and Open Library with fallback ordering",
+  "group": "Research",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/scholarly-metadata-resolution-pattern",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/scholarly-metadata-resolution-pattern && cd scholarly-metadata-resolution-pattern && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/scholarly-metadata-resolution-pattern && cd scholarly-metadata-resolution-pattern && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/scholarly-metadata-resolution-pattern"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "gated-multi-agent-review-lifecycle",
+  "description": "A gate lifecycle for multi-agent work: structured verdicts, failure routing, escalation, no self-approval",
+  "group": "Orchestration",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/gated-multi-agent-review-lifecycle",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/gated-multi-agent-review-lifecycle && cd gated-multi-agent-review-lifecycle && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/gated-multi-agent-review-lifecycle && cd gated-multi-agent-review-lifecycle && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/gated-multi-agent-review-lifecycle"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "agent-brief-schema-for-specialist-roles",
+  "description": "A fixed briefing schema for specialist agents: scope, inputs, tools, output contract, acceptance tests",
+  "group": "Orchestration",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/agent-brief-schema-for-specialist-roles",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/agent-brief-schema-for-specialist-roles && cd agent-brief-schema-for-specialist-roles && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/agent-brief-schema-for-specialist-roles && cd agent-brief-schema-for-specialist-roles && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/agent-brief-schema-for-specialist-roles"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "adversarial-peer-review-role",
+  "description": "An adversarial reviewer role: severity taxonomy, evidence citations, disconfirmation duty",
+  "group": "Orchestration",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/adversarial-peer-review-role",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/adversarial-peer-review-role && cd adversarial-peer-review-role && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/adversarial-peer-review-role && cd adversarial-peer-review-role && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/adversarial-peer-review-role"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "legacy-plan-reconciliation-matrix",
+  "description": "Audit an outdated plan against current evidence with a REUSE, REVISE, REJECT, DEFER, VERIFY matrix",
+  "group": "Governance",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/legacy-plan-reconciliation-matrix",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/legacy-plan-reconciliation-matrix && cd legacy-plan-reconciliation-matrix && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/legacy-plan-reconciliation-matrix && cd legacy-plan-reconciliation-matrix && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/legacy-plan-reconciliation-matrix"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "governance-records-ledger-conventions",
+  "description": "Append-only conventions for decision logs, task ledgers, and open-question files in long-running projects",
+  "group": "Governance",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/governance-records-ledger-conventions",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/governance-records-ledger-conventions && cd governance-records-ledger-conventions && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/governance-records-ledger-conventions && cd governance-records-ledger-conventions && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/governance-records-ledger-conventions"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "evidence-ledger-and-phase-handoff-convention",
+  "description": "Evidence ledgers and phase-handoff documents that pass auditable context between sessions or agents",
+  "group": "Governance",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/evidence-ledger-and-phase-handoff-convention",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/evidence-ledger-and-phase-handoff-convention && cd evidence-ledger-and-phase-handoff-convention && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/evidence-ledger-and-phase-handoff-convention && cd evidence-ledger-and-phase-handoff-convention && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/evidence-ledger-and-phase-handoff-convention"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "pre-publication-review-gate-checklist",
+  "description": "Pre-launch review gate: claim accuracy, accessibility, privacy, and synthetic demo-data disclosure",
+  "group": "Governance",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/pre-publication-review-gate-checklist",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/pre-publication-review-gate-checklist && cd pre-publication-review-gate-checklist && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/pre-publication-review-gate-checklist && cd pre-publication-review-gate-checklist && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/pre-publication-review-gate-checklist"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "ai-project-cost-modeling",
+  "description": "A structured cost model for AI-assisted projects: category taxonomy across low, base, and high scenarios",
+  "group": "Governance",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/ai-project-cost-modeling",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/ai-project-cost-modeling && cd ai-project-cost-modeling && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/ai-project-cost-modeling && cd ai-project-cost-modeling && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/ai-project-cost-modeling"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "llm-routing-and-judge-eval-harness-pattern",
+  "description": "Provider-agnostic LLM routing with deterministic fallback, plus an LLM-as-judge eval harness with gold sets",
+  "group": "Engineering",
+  "kind": "playbook",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/llm-routing-and-judge-eval-harness-pattern",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/llm-routing-and-judge-eval-harness-pattern && cd llm-routing-and-judge-eval-harness-pattern && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/llm-routing-and-judge-eval-harness-pattern && cd llm-routing-and-judge-eval-harness-pattern && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/llm-routing-and-judge-eval-harness-pattern"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "accessible-dialog-focus-trap-primitives",
+  "description": "Accessible React dialog primitives: focus trap, escape handling, focus restoration, live-region announcements",
+  "group": "Engineering",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/accessible-dialog-focus-trap-primitives",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/accessible-dialog-focus-trap-primitives && cd accessible-dialog-focus-trap-primitives && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/accessible-dialog-focus-trap-primitives && cd accessible-dialog-focus-trap-primitives && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/accessible-dialog-focus-trap-primitives"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "nextjs-cloudflare-workers-landing-site-setup",
+  "description": "Wire a Next.js landing site onto Cloudflare Workers with wrangler and Drizzle, from scratch",
+  "group": "Engineering",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/nextjs-cloudflare-workers-landing-site-setup",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/nextjs-cloudflare-workers-landing-site-setup && cd nextjs-cloudflare-workers-landing-site-setup && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/nextjs-cloudflare-workers-landing-site-setup && cd nextjs-cloudflare-workers-landing-site-setup && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/nextjs-cloudflare-workers-landing-site-setup"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "context-window-text-chunking",
+  "description": "Paragraph-boundary-aware text chunking for fitting long documents into LLM context windows",
+  "group": "Engineering",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/context-window-text-chunking",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/context-window-text-chunking && cd context-window-text-chunking && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/context-window-text-chunking && cd context-window-text-chunking && ./install.sh --agents --project <your-project>",
+   "paste": "paste SKILL.md from https://github.com/hyderhusainarastu/context-window-text-chunking"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "deep-research-skill",
+  "description": "Research you can audit: saturation stop rule, explicit verification levels and bounded negative findings, run by parallel agents or by one chat in sequence. Includes CSV schemas and a corpus keyword audit script.",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Gemini CLI",
+   "Cursor",
+   "Copilot",
+   "ChatGPT (paste)"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/deep-research-skill",
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/deep-research-skill && cd deep-research-skill && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/deep-research-skill && cd deep-research-skill && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/deep-research-skill"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "cross-model-second-opinion",
+  "description": "Get a budgeted second opinion from a different AI model: when to ask, read-only and ephemeral CLI recipes, a call cap, and how to weigh the answer.",
+  "group": "Orchestration",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Gemini CLI",
+   "Cursor",
+   "Copilot",
+   "ChatGPT (paste)"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/cross-model-second-opinion",
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/cross-model-second-opinion && cd cross-model-second-opinion && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/cross-model-second-opinion && cd cross-model-second-opinion && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/cross-model-second-opinion"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "hallucinated-citation-checker",
+  "description": "Check every BibTeX entry against Crossref, OpenAlex, arXiv, Open Library and doi.org to catch fabricated or garbled references; CSV verdict per key. Also a Python CLI (primary listing in palimnote-tools).",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Gemini CLI",
+   "Cursor",
+   "Copilot",
+   "ChatGPT (paste)",
+   "Terminal CLI"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/hallucinated-citation-checker",
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/hallucinated-citation-checker && cd hallucinated-citation-checker && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/hallucinated-citation-checker && cd hallucinated-citation-checker && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/hallucinated-citation-checker"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "agent-report-evidence-gate",
+  "description": "CLI plus skill that checks an agent's \"done\" report for evidence completeness: cited files exist, success claims sit next to evidence, structured claims re-verify. Primary listing in palimnote-tools.",
+  "group": "Safety and verification",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Gemini CLI",
+   "Cursor",
+   "Copilot",
+   "ChatGPT (paste)",
+   "Terminal CLI"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/agent-report-evidence-gate",
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/agent-report-evidence-gate && cd agent-report-evidence-gate && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/agent-report-evidence-gate && cd agent-report-evidence-gate && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/agent-report-evidence-gate"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "release-privacy-scanner",
+  "description": "Scan a repo, its git history and release archives for local paths, personal identifiers, emails, hostnames and secret-shaped strings before a public push or double-blind submission. Primary listing in palimnote-tools.",
+  "group": "Safety and verification",
+  "kind": "skill",
+  "skill_paths": [
+   "SKILL.md"
+  ],
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Gemini CLI",
+   "Cursor",
+   "Copilot",
+   "ChatGPT (paste)",
+   "Terminal CLI"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/release-privacy-scanner",
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/release-privacy-scanner && cd release-privacy-scanner && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/release-privacy-scanner && cd release-privacy-scanner && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/release-privacy-scanner"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "gated-research-pipeline",
+  "description": "Template for AI-assisted research writing: every claim traces to a checkable source and nothing is done until it clears a readiness gate. Ships four skills, ledgers and provenance tools.",
+  "group": "Research",
+  "kind": "skill",
+  "skill_paths": [
+   ".claude/skills/gate-e-sweeps/SKILL.md",
+   ".claude/skills/records-update/SKILL.md",
+   ".claude/skills/ai-review/SKILL.md",
+   ".claude/skills/source-intake/SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/gated-research-pipeline",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/gated-research-pipeline && cd gated-research-pipeline && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/gated-research-pipeline && cd gated-research-pipeline && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/gated-research-pipeline"
+  },
+  "topics": [
+   "agent-skills",
+   "skill-md",
+   "ai-agents"
+  ]
+ },
+ {
+  "name": "hardware-mod-toolkit",
+  "description": "Skills for reverse engineering and modding consumer hardware: serial and USB recon, firmware image analysis, framed serial protocols, safe MCU backup, hardware-in-the-loop testing and publish hygiene.",
+  "group": "Hardware",
+  "kind": "skill",
+  "skill_paths": [
+   "skills/publish-hygiene/SKILL.md",
+   "skills/serial-and-usb-recon/SKILL.md",
+   "skills/firmware-image-analysis/SKILL.md",
+   "skills/framed-serial-protocol/SKILL.md",
+   "skills/stock-updater-packaging/SKILL.md",
+   "skills/device-companion-dashboard/SKILL.md",
+   "skills/hardware-in-the-loop-testing/SKILL.md",
+   "skills/moderator-operating-model/SKILL.md",
+   "skills/hardware-recon/SKILL.md",
+   "skills/custom-firmware-bringup/SKILL.md",
+   "skills/mcu-safe-backup/SKILL.md"
+  ],
+  "repo": "https://github.com/hyderhusainarastu/hardware-mod-toolkit",
+  "works_with": [
+   "Claude Code",
+   "Codex",
+   "Cursor",
+   "Gemini CLI",
+   "ChatGPT (paste)"
+  ],
+  "install": {
+   "claude": "git clone https://github.com/hyderhusainarastu/hardware-mod-toolkit && cd hardware-mod-toolkit && ./install.sh --claude",
+   "agents": "git clone https://github.com/hyderhusainarastu/hardware-mod-toolkit && cd hardware-mod-toolkit && ./install.sh --agents --project <your-project>",
+   "paste": "paste PROMPT.md from https://github.com/hyderhusainarastu/hardware-mod-toolkit"
+  },
+  "topics": [
+   "agent-skills",
+   "hardware",
+   "reverse-engineering"
+  ]
+ }
+]
