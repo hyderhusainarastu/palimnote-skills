@@ -37,19 +37,23 @@ def short(e):
 def build():
     skills = json.loads((ROOT / "skills.json").read_text())
     n = len(skills)
+    planned = [e for e in skills if e.get("status") == "planned"]
     out = []
     out.append("# Palimnote Skills\n")
     out.append(f"Index of {n} portable `SKILL.md` agent skills and playbooks for research, writing, multi-agent review, governance and engineering. "
-               "Each lives in its own repo and loads natively in Claude Code and Codex, or pastes into ChatGPT, Gemini, Cursor and Copilot.\n")
+               "Each lives in its own repo and loads natively in Claude Code and Codex, or pastes into ChatGPT, Gemini, Cursor and Copilot."
+               + (f" {len(planned)} of them are planned and have no public repo or `install.sh` yet; they are listed without links.\n" if planned else "\n"))
     out.append("The count and every table below are generated from [`skills.json`](skills.json) by `scripts/build_readme.py`. Edit the JSON, not the tables.\n")
     out.append("## Start here\n")
-    out.append("- Auditable literature and evidence review: [deep-research-skill](https://github.com/hyderhusainarastu/deep-research-skill)")
-    out.append("- Check a bibliography for fabricated references: [hallucinated-citation-checker](https://github.com/hyderhusainarastu/hallucinated-citation-checker)")
-    out.append("- Make an agent's \"done\" report show its evidence: [agent-report-evidence-gate](https://github.com/hyderhusainarastu/agent-report-evidence-gate)")
-    out.append("- Scan a repo for leaks before a public push: [release-privacy-scanner](https://github.com/hyderhusainarastu/release-privacy-scanner)")
+    for nm, txt in [("deep-research-skill", "Auditable literature and evidence review"),
+                    ("hallucinated-citation-checker", "Check a bibliography for fabricated references"),
+                    ("agent-report-evidence-gate", "Make an agent's \"done\" report show its evidence"),
+                    ("release-privacy-scanner", "Scan a repo for leaks before a public push")]:
+        e = next(x for x in skills if x["name"] == nm)
+        out.append(f"- {txt}: " + (f"{nm} (planned, not yet published)" if e.get("status") == "planned" else f"[{nm}]({e['repo']})"))
     out.append("- Run a team of agents: [multi-agent-orchestration-playbook](https://github.com/hyderhusainarastu/multi-agent-orchestration-playbook)\n")
     out.append("## Install per tool\n")
-    out.append("Every skill repo ships the same `install.sh`. Clone the repo you want, then:\n")
+    out.append("Every published skill repo ships the same `install.sh`; skills marked planned below have no repo yet. Clone the repo you want, then:\n")
     out.append("| Tool | How |\n| --- | --- |")
     for t, h in INSTALL:
         out.append(f"| {t} | {h} |")
@@ -61,7 +65,10 @@ def build():
         out.append(f"## {g}\n")
         out.append("| Skill | What it does | Kind |\n| --- | --- | --- |")
         for e in rows:
-            out.append(f"| [{e['name']}]({e['repo']}) | {short(e)} | {e['kind']} |")
+            if e.get("status") == "planned":
+                out.append(f"| {e['name']} (planned, not yet published) | {short(e)} | {e['kind']} |")
+            else:
+                out.append(f"| [{e['name']}]({e['repo']}) | {short(e)} | {e['kind']} |")
         out.append("")
     out.append("## Related repos (no SKILL.md)\n")
     out.append("These ship tools, libraries or patterns rather than a skill. They are listed here so the skills above link to them; each is indexed in its own catalog.\n")

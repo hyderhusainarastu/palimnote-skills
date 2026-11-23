@@ -622,6 +622,7 @@
  },
  {
   "name": "deep-research-skill",
+  "status": "planned",
   "description": "Research you can audit: saturation stop rule, explicit verification levels and bounded negative findings, run by parallel agents or by one chat in sequence. Includes CSV schemas and a corpus keyword audit script.",
   "group": "Research",
   "kind": "skill",
@@ -650,6 +651,7 @@
  },
  {
   "name": "cross-model-second-opinion",
+  "status": "planned",
   "description": "Get a budgeted second opinion from a different AI model: when to ask, read-only and ephemeral CLI recipes, a call cap, and how to weigh the answer.",
   "group": "Orchestration",
   "kind": "skill",
@@ -678,6 +680,7 @@
  },
  {
   "name": "hallucinated-citation-checker",
+  "status": "planned",
   "description": "Check every BibTeX entry against Crossref, OpenAlex, arXiv, Open Library and doi.org to catch fabricated or garbled references; CSV verdict per key. Also a Python CLI (primary listing in palimnote-tools).",
   "group": "Research",
   "kind": "skill",
@@ -707,6 +710,7 @@
  },
  {
   "name": "agent-report-evidence-gate",
+  "status": "planned",
   "description": "CLI plus skill that checks an agent's \"done\" report for evidence completeness: cited files exist, success claims sit next to evidence, structured claims re-verify. Primary listing in palimnote-tools.",
   "group": "Safety and verification",
   "kind": "skill",
@@ -736,6 +740,7 @@
  },
  {
   "name": "release-privacy-scanner",
+  "status": "planned",
   "description": "Scan a repo, its git history and release archives for local paths, personal identifiers, emails, hostnames and secret-shaped strings before a public push or double-blind submission. Primary listing in palimnote-tools.",
   "group": "Safety and verification",
   "kind": "skill",

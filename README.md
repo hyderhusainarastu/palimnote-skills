@@ -1,20 +1,20 @@
 # Palimnote Skills
 
-Index of 30 portable `SKILL.md` agent skills and playbooks for research, writing, multi-agent review, governance and engineering. Each lives in its own repo and loads natively in Claude Code and Codex, or pastes into ChatGPT, Gemini, Cursor and Copilot.
+Index of 30 portable `SKILL.md` agent skills and playbooks for research, writing, multi-agent review, governance and engineering. Each lives in its own repo and loads natively in Claude Code and Codex, or pastes into ChatGPT, Gemini, Cursor and Copilot. 5 of them are planned and have no public repo or `install.sh` yet; they are listed without links.
 
 The count and every table below are generated from [`skills.json`](skills.json) by `scripts/build_readme.py`. Edit the JSON, not the tables.
 
 ## Start here
 
-- Auditable literature and evidence review: [deep-research-skill](https://github.com/hyderhusainarastu/deep-research-skill)
-- Check a bibliography for fabricated references: [hallucinated-citation-checker](https://github.com/hyderhusainarastu/hallucinated-citation-checker)
-- Make an agent's "done" report show its evidence: [agent-report-evidence-gate](https://github.com/hyderhusainarastu/agent-report-evidence-gate)
-- Scan a repo for leaks before a public push: [release-privacy-scanner](https://github.com/hyderhusainarastu/release-privacy-scanner)
+- Auditable literature and evidence review: deep-research-skill (planned, not yet published)
+- Check a bibliography for fabricated references: hallucinated-citation-checker (planned, not yet published)
+- Make an agent's "done" report show its evidence: agent-report-evidence-gate (planned, not yet published)
+- Scan a repo for leaks before a public push: release-privacy-scanner (planned, not yet published)
 - Run a team of agents: [multi-agent-orchestration-playbook](https://github.com/hyderhusainarastu/multi-agent-orchestration-playbook)
 
 ## Install per tool
 
-Every skill repo ships the same `install.sh`. Clone the repo you want, then:
+Every published skill repo ships the same `install.sh`; skills marked planned below have no repo yet. Clone the repo you want, then:
 
 | Tool | How |
 | --- | --- |
@@ -37,8 +37,8 @@ Every skill repo ships the same `install.sh`. Clone the repo you want, then:
 | [source-authority-hierarchy](https://github.com/hyderhusainarastu/source-authority-hierarchy) | A tiered authority hierarchy for resolving conflicts between sources when evidence disagrees | playbook |
 | [empirical-study-design-and-gold-set-toolkit](https://github.com/hyderhusainarastu/empirical-study-design-and-gold-set-toolkit) | Design empirical evaluations end to end and build gold-standard sets with blinding and leakage controls | skill |
 | [scholarly-metadata-resolution-pattern](https://github.com/hyderhusainarastu/scholarly-metadata-resolution-pattern) | Resolve bibliographic metadata across Crossref, OpenAlex, Google Books, and Open Library with fallback ordering | playbook |
-| [deep-research-skill](https://github.com/hyderhusainarastu/deep-research-skill) | Research you can audit: saturation stop rule, explicit verification levels and bounded negative findings, run by parallel agents or by one chat in sequence. Includes CSV schemas and a corpus keyword audit script. | skill |
-| [hallucinated-citation-checker](https://github.com/hyderhusainarastu/hallucinated-citation-checker) | Check every BibTeX entry against Crossref, OpenAlex, arXiv, Open Library and doi.org to catch fabricated or garbled references; CSV verdict per key. Also a Python CLI (primary listing in palimnote-tools). | skill |
+| deep-research-skill (planned, not yet published) | Research you can audit: saturation stop rule, explicit verification levels and bounded negative findings, run by parallel agents or by one chat in sequence. Includes CSV schemas and a corpus keyword audit script. | skill |
+| hallucinated-citation-checker (planned, not yet published) | Check every BibTeX entry against Crossref, OpenAlex, arXiv, Open Library and doi.org to catch fabricated or garbled references; CSV verdict per key. Also a Python CLI (primary listing in palimnote-tools). | skill |
 | [gated-research-pipeline](https://github.com/hyderhusainarastu/gated-research-pipeline) | Template for AI-assisted research writing: every claim traces to a checkable source and nothing is done until it clears a readiness gate. Ships four skills, ledgers and provenance tools. | skill |
 
 ## Writing
@@ -58,7 +58,7 @@ Every skill repo ships the same `install.sh`. Clone the repo you want, then:
 | [gated-multi-agent-review-lifecycle](https://github.com/hyderhusainarastu/gated-multi-agent-review-lifecycle) | A gate lifecycle for multi-agent work: structured verdicts, failure routing, escalation, no self-approval | playbook |
 | [agent-brief-schema-for-specialist-roles](https://github.com/hyderhusainarastu/agent-brief-schema-for-specialist-roles) | A fixed briefing schema for specialist agents: scope, inputs, tools, output contract, acceptance tests | playbook |
 | [adversarial-peer-review-role](https://github.com/hyderhusainarastu/adversarial-peer-review-role) | An adversarial reviewer role: severity taxonomy, evidence citations, disconfirmation duty | playbook |
-| [cross-model-second-opinion](https://github.com/hyderhusainarastu/cross-model-second-opinion) | Get a budgeted second opinion from a different AI model: when to ask, read-only and ephemeral CLI recipes, a call cap, and how to weigh the answer. | skill |
+| cross-model-second-opinion (planned, not yet published) | Get a budgeted second opinion from a different AI model: when to ask, read-only and ephemeral CLI recipes, a call cap, and how to weigh the answer. | skill |
 
 ## Governance
 
@@ -83,8 +83,8 @@ Every skill repo ships the same `install.sh`. Clone the repo you want, then:
 
 | Skill | What it does | Kind |
 | --- | --- | --- |
-| [agent-report-evidence-gate](https://github.com/hyderhusainarastu/agent-report-evidence-gate) | CLI plus skill that checks an agent's "done" report for evidence completeness: cited files exist, success claims sit next to evidence, structured claims re-verify. Primary listing in palimnote-tools. | skill |
-| [release-privacy-scanner](https://github.com/hyderhusainarastu/release-privacy-scanner) | Scan a repo, its git history and release archives for local paths, personal identifiers, emails, hostnames and secret-shaped strings before a public push or double-blind submission. Primary listing in palimnote-tools. | skill |
+| agent-report-evidence-gate (planned, not yet published) | CLI plus skill that checks an agent's "done" report for evidence completeness: cited files exist, success claims sit next to evidence, structured claims re-verify. Primary listing in palimnote-tools. | skill |
+| release-privacy-scanner (planned, not yet published) | Scan a repo, its git history and release archives for local paths, personal identifiers, emails, hostnames and secret-shaped strings before a public push or double-blind submission. Primary listing in palimnote-tools. | skill |
 
 ## Hardware
 

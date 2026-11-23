@@ -29,7 +29,16 @@ class Catalog(unittest.TestCase):
     def test_every_skill_in_a_table(self):
         text = build_readme.build()
         for e in self.skills:
-            self.assertIn(f"[{e['name']}]({e['repo']})", text)
+            if e.get("status") == "planned":
+                self.assertIn(f"| {e['name']} (planned, not yet published) |", text)
+                self.assertNotIn(e["repo"], text)
+            else:
+                self.assertIn(f"[{e['name']}]({e['repo']})", text)
+
+    def test_planned_skills_are_the_five_without_repos(self):
+        planned = {e["name"] for e in self.skills if e.get("status") == "planned"}
+        self.assertEqual(planned, {"deep-research-skill", "cross-model-second-opinion",
+            "hallucinated-citation-checker", "agent-report-evidence-gate", "release-privacy-scanner"})
 
     def test_link_check_offline(self):
         urls = check_links.links(build_readme.build())
